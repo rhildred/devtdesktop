@@ -1,6 +1,6 @@
 # devtdesktop
 This is my current development environment bootstrap to be run with curl to set up a user with sudo and docker groups.
 
-`bash <uname><(curl https://rhildred.github.io/devtdesktop/toaster.sh)`
+`bash <(curl https://rhildred.github.io/devtdesktop/toaster.sh) <your desired username here>`
 
 Sadly I can't find a way to get visual studio code without using chrome.
