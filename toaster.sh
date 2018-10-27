@@ -1,3 +1,4 @@
+#!/bin/bash -i
 sudo apt-get update
 sudo apt-get install xrdp mate-core mate-desktop-environment mate-notification-daemon #x windows
 # let xrdp use MATE
