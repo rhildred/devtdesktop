@@ -1,10 +1,8 @@
 #!/bin/bash -i
-sudo do-release-upgrade
 sudo apt-get update
 sudo apt-get install xrdp mate-core mate-desktop-environment mate-notification-daemon #x windows
 # let xrdp use MATE
 sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
-sudo systemctl enable xrdp
 sudo apt-get install docker.io make
 sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
