@@ -7,4 +7,8 @@ Sadly I can't find a way to get visual studio code without using chrome. I did i
 
 Also sadly, I tried this with Ubuntu 18.04 and it was very slow. I tried the exact thing with 16.04 and it is fine. With Ubuntu 16.04 there was a hack that I needed to get vscode working. I had to edit the elf file `/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0` and change the one occurence of the word `BIG` to `FIG`. You couldn't make something like this up.
 
+Mate with xrdp and Ubuntu 16.04 doesn't deal with `alt-tab` properly. I couldn't find an acceptable fix.
+
 Once VSCode was installed I also installed extensions ritwickdey.liveserver and streetsidesoftware.code-spell-checker.
+
+I used `nvm ls-remote` to find the latest nvm version. Then I did `nvm install x.x.x` to install it.
