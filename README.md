@@ -1,5 +1,7 @@
 # devtdesktop
-This is my current development environment bootstrap to be run with curl to set up a user with sudo and docker groups. Start up a Ubuntu Amazon instance and run:
+This is my current development environment bootstrap to be run with curl to set up a user with sudo and docker groups. I use it instead of carrying a laptop between my 3 teaching gigs. 
+
+Start up a Ubuntu Amazon instance and run:
 
 `bash <(curl https://rhildred.github.io/devtdesktop/toaster.sh) <your desired username here>`
 
@@ -12,3 +14,5 @@ Mate with xrdp and Ubuntu 16.04 doesn't deal with `alt-tab` properly. I couldn't
 Once VSCode was installed I also installed extensions ritwickdey.liveserver and streetsidesoftware.code-spell-checker.
 
 I used `nvm ls-remote` to find the latest nvm version. Then I did `nvm install x.x.x` to install it.
+
+Sadly, there are problems with this. Xrdp auto-install breaks it so I need to revert every time I use it. My plan is to shut this down in favour of my rhlab.io project built on docker-compose-ui. I really just need "edit in vscode on the web" for that to work. It looks like that is do-able by replacing node builtins used by vscode like fs with shim modules like fs-remote.
